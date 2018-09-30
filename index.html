@@ -25,10 +25,10 @@
       // prompted by your browser. If you see the error "The Geolocation service
       // failed.", it means you probably did not give permission for the browser to
       // locate you.
-      var map, infoWindow,    mulberryIW;
+      var map, infoWindow,    academyIW;
       function initMap() {
         //String for infoWindow
-        var mulberryString = '<div id="content">'+
+        var academyString = '<div id="content">'+
             '<div id="siteNotice">'+
             '</div>'+
             '<h1 id="firstHeading" class="firstHeading">Durham Hall</h1>'+
@@ -42,10 +42,10 @@
             '</div>';
 
 
-        //The location of Durham
-        var mulberry = {lat: 39.081549, lng: -78.218520}
-        mulberryIW = new google.maps.InfoWindow({
-          content: mulberryString,
+        //Historical Site Num 1
+        var academy = {lat: 39.081549, lng: -78.218520}
+        academyIW = new google.maps.InfoWindow({
+          content: academyString,
           maxWidth: 200
 
         });
@@ -57,14 +57,14 @@
         var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
 
         var marker = new google.maps.Marker({
-            position: mulberry,
+            position: academy,
             map: map, 
             animation: google.maps.Animation.DROP,
             icon: iconBase + 'library_maps.png'
 
         });
         marker.addListener('click', function() {
-            mulberryIW.open(map, marker);
+            academyIW.open(map, marker);
         });
 
 

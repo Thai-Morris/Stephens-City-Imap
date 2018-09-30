@@ -60,7 +60,12 @@
             animation: google.maps.Animation.DROP,
             icon: iconBase + 'library_maps.png'
 
-});
+        });
+        marker.addListener('click', function() {
+          durhamIW.open(map, marker);
+        });
+
+
         infoWindow = new google.maps.InfoWindow;
 }
         // Try HTML5 geolocation.

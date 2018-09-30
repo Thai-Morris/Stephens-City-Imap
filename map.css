@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+/*!
+
+The Stylesheet for the map
+
+Developed by Thai Morris
+
+
+
+*/
+
+@font-face {
+    font-family: Economica;
+    src: url(fonts/Economica-Bold.ttf);
+
+}
+
+@font-face {
+    font-family: Lora-Regular;
+    src: url(fonts/Lora-Regular.ttf);
+    
+}
+
+.h1{
+    font-family: Economica;
+
+}
+
+
+.topic{
+    font-weight:bold;
+}
+

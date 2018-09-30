@@ -27,42 +27,22 @@
       // locate you.
       var map, infoWindow;
       function initMap() {
-        //Durham's info, notice how it's written in HTML, we can style it in CSS.
-        var durhamString = '<div id="content">'+
-            '<div id="siteNotice">'+
-            '</div>'+
-            '<h1 id="firstHeading" class="firstHeading">Durham Hall</h1>'+
-            '<div id="bodyContent">'+
-            '<p><b>Durham Hall</b>,  is a classroom center for the students of SVU. It was donated to Southern Virginina University in 1952 (back then it was called Soutern Seminary) by the Durham family. ' +
-            '</p>'+
-            '</div>'
-            '<p class="cite">Source: Von Cannon Library</p>'+
-            '</div>'+
-            '</div>';
-
         //The location of durham for example
-        var durhamLocation = {lat: 37.740652, lng: -79.351089}
+        var durham = {lat: 37.740652, lng: -79.351089}
 
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: -34.397, lng: 150.644},
           zoom: 6
         });
         var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
-        var durhamInfo = new google.maps.InfoWindow({
-          content: durhamString
-        });
-        
-        var durhamMarker = new google.maps.Marker({
-            position: durhamLocation,
+
+        var marker = new google.maps.Marker({
+            position: durham,
             map: map, 
             animation: google.maps.Animation.DROP,
             icon: iconBase + 'library_maps.png'
 
-        });
-        durhamMarker.addListener('click', function() {
-          durhamInfo.open(map, durhamMarker);
-        });
-
+});
         infoWindow = new google.maps.InfoWindow;
 }
         // Try HTML5 geolocation.

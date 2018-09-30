@@ -59,7 +59,7 @@
             icon: iconBase + 'library_maps.png'
 
         });
-        durhamLocation.addListener('click', function() {
+        durhamMarker.addListener('click', function() {
           durhamInfo.open(map, durhamMarker);
         });
 
@@ -74,7 +74,7 @@
             };
 
             infoWindow.setPosition(pos);
-            infoWindow.setContent('You are here, Hannah Smith');
+            infoWindow.setContent('You are here');
             infoWindow.open(map);
             map.setCenter(pos);
           }, function() {

@@ -28,7 +28,10 @@ Developed by Thai Morris
 }
 
 
-.topic{
+span{
     font-weight:bold;
 }
 
+p{
+    font-family: Lora-Regular;
+}

@@ -20,9 +20,8 @@ html {
        
     }
 
-    img {
-        height: 50%;
-        width: 50%;
+    .return{
+        top: 60%;
     }
 
 }

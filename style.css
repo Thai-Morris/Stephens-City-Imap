@@ -78,7 +78,6 @@ p{
 	-moz-transition:all 0.2s ease-in-out;
     -webkit-transition:all 0.2s ease-in-out;
     position: relative;
-    top: 100%;
     transform: translateY(-50%);
     left: 25%;
 }

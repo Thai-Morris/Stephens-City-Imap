@@ -108,7 +108,7 @@ p{
 
 
 
-/*    @media screen and (max-width: 1080px) {
+   @media screen and (max-width: 1080px) {
 
     html {
     
@@ -117,7 +117,7 @@ p{
     }
     
     .return{
-        position: absolute;
+        position: relative;
         top: 75%;
     }
         
@@ -135,4 +135,4 @@ p{
             top: 0%;
         }
     
-    } */
+    }

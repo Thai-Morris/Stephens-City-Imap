@@ -132,9 +132,7 @@ p{
         }
     
         .return{
-            position: absolute;
-
-            top: 236%;
+            position: relative
         }
     
     }

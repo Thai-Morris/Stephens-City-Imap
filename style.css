@@ -109,7 +109,7 @@ p{
 
 
 
-   @media (max-width: 1080px) {
+   @media screen and (max-width: 1080px) {
 
     html {
     
@@ -125,7 +125,7 @@ p{
     }
     
     
-    @media (max-width: 767px) {
+    @media screen and (max-width: 767px) {
         html {
            
            width: 100%;   

@@ -57,8 +57,7 @@ p{
 
 /* Style the content */
 .content {
-    background-color: #ddd;
-    padding: 10px;
+    padding: 5%;
 }
 
 /* Style the buttons */
@@ -73,12 +72,15 @@ p{
 	line-height:46px;
 	border-radius:3px;
 	text-align:center;
-	font-family:''Dosis'';
 	text-transform:uppercase;
 	font-weight: 600;
 	transition:all 0.2s ease-in-out;
 	-moz-transition:all 0.2s ease-in-out;
-	-webkit-transition:all 0.2s ease-in-out;
+    -webkit-transition:all 0.2s ease-in-out;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 25%;
 }
 
 .go{
@@ -87,7 +89,7 @@ p{
 	font-size:16px;
 	color:#ffffff;
 	background:#49b5e7;
-	width: 60%;
+	width: 50%;
 	line-height:46px;
 	border-radius:3px;
 	text-align:center;

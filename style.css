@@ -37,7 +37,66 @@ p{
 }
 
 
-a{
-font-size: 12px;
+
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav h1 {
+    display: inline-block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+/* Style the content */
+.content {
+    background-color: #ddd;
+    padding: 10px;
+}
+
+/* Style the buttons */
+.return {
+    font-family: 'Dosis';
+	display:block;
+	font-size:16px;
+	color:#ffffff;
+	background:#49b5e7;
+	width:13.5%;
+	height:46px;
+	line-height:46px;
+	border-radius:3px;
+	text-align:center;
+	font-family:''Dosis'';
+	text-transform:uppercase;
+	font-weight: 600;
+	transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+	-webkit-transition:all 0.2s ease-in-out;
+}
+
+.go{
+    font-family: 'Dosis';
+	display:block;
+	font-size:16px;
+	color:#ffffff;
+	background:#49b5e7;
+	width: 60%;
+	line-height:46px;
+	border-radius:3px;
+	text-align:center;
+	font-family:''Dosis'';
+	text-transform:uppercase;
+	font-weight: 600;
+	transition:all 0.2s ease-in-out;
+	-moz-transition:all 0.2s ease-in-out;
+    -webkit-transition:all 0.2s ease-in-out;
+    
 
 }

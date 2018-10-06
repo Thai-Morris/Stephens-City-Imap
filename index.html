@@ -28,6 +28,18 @@
       var map, infoWindow,    academyIW;
       function initMap() {
         //String for infoWindows
+
+        var locustString = '<div class="content">'+
+            '<div class="siteNotice">'+
+            '</div>'+
+            '<h1>Locust Grove Cemetery</h1>'+
+            '<div class="bodyContent">'+
+                '<img src="img/pt5.jpg" alt="Locust Grove Cemetery" height="150px" width="150px">' +
+                '<p class="blurb"> This is the town’s first African American community cemetery established in 1880 on land granted by the town council. </p>' +
+            '<br> <div class="go"><a href="locust.html">Learn More</a></div>'+
+            '</div>'+
+            '</div>'+
+            '</div>';
         var orrickString = '<div class="content">'+
             '<div class="siteNotice">'+
             '</div>'+
@@ -82,6 +94,13 @@
         var reform = {lat: 39.082962, lng: -78.216955}
         var methodist = {lat:39.086074, lng: -78.216593}
         var orrick = {lat:39.08433, lng: -78.215692}
+        var locust = {lat:39.08433, lng: -78.220056}
+        
+        locustIW = new google.maps.InfoWindow({
+          content: locustString,
+          maxWidth: 225
+
+        });
         
         orrickIW = new google.maps.InfoWindow({
           content: orrickString,
@@ -143,6 +162,17 @@
           icon: iconBase + 'library_maps.png'
 
         })
+
+        var marker4 = new google.maps.Marker({
+          position: locust,
+          map: map,
+          animation: google.maps.Animation.DROP,
+          icon: iconBase + 'library_maps.png'
+
+        })
+        marker4.addListener('click', function() {
+          locustIW.open(map, marker4)
+        } )
 
         marker3.addListener('click', function() {
           orrickIW.open(map, marker3)

@@ -28,6 +28,17 @@
       var map, infoWindow,    academyIW;
       function initMap() {
         //String for infoWindows
+        var orrickString = '<div class="content">'+
+            '<div class="siteNotice">'+
+            '</div>'+
+            '<h1>Orrick Chapel</h1>'+
+            '<div class="bodyContent">'+
+                '<img src="img/pt4.jpg" alt="Orrick Chapel" height="150px" width="150px">' +
+                '<p class="blurb">Methodist Meeting house built by African American Methodists after the Civil War to replace an earlier chapel that the same congregation had built in the 1850s.' +
+            '<br> <div class="go"><a href="orrick.html">Learn More</a></div>'+
+            '</div>'+
+            '</div>'+
+            '</div>';
 
         var methodistString = '<div class="content">'+
             '<div class="siteNotice">'+
@@ -70,6 +81,13 @@
         var academy = {lat: 39.081549, lng: -78.218520}
         var reform = {lat: 39.082962, lng: -78.216955}
         var methodist = {lat:39.086074, lng: -78.216593}
+        var orrick = {lat:39.08433, lng: -78.215692}
+        
+        orrickIW = new google.maps.InfoWindow({
+          content: orrickString,
+          maxWidth: 225
+
+        });
 
         reformIW = new google.maps.InfoWindow({
           content: reformString,
@@ -90,7 +108,7 @@
 
         map = new google.maps.Map(document.getElementById('map'), {
           center: {lat: 39.085057, lng: -78.218221},
-          zoom: 15
+          zoom: 16
         });
         var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
 
@@ -117,6 +135,18 @@
             icon: iconBase + 'library_maps.png'
 
         });
+
+        var marker3 = new google.maps.Marker({
+          position: orrick,
+          map: map,
+          animation: google.maps.Animation.DROP,
+          icon: iconBase + 'library_maps.png'
+
+        })
+
+        marker3.addListener('click', function() {
+          orrickIW.open(map, marker3)
+        } )
 
         marker2.addListener('click', function() {
           methodistIW.open(map, marker2)

@@ -1,200 +1,227 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <title>Stephens City Virtual Historical Tour</title>
-  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-  <meta charset="utf-8">
-  <link href="style.css" rel="stylesheet" type="text/css">
-  <meta name="author" content="Thai Morris and Hannah Smith">
-  <meta name="description" content="Stephens City Virtual Historical Tour">
-  <style>
-    /* Always set the map height explicitly to define the size of the div
+  <head>
+    <title>Stephens City Virtual Historical Tour</title>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <meta name="author" content="Thai Morris and Hannah Smith">
+    <meta name="description" content="Stephens City Virtual Historical Tour">
+    <style>
+      /* Always set the map height explicitly to define the size of the div
        * element that contains the map. */
-    #map {
-      height: 100%;
-    }
+      #map {
+        height: 100%;
+      }
+      /* Optional: Makes the page fill the window. */
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="map"></div>
+    <script>
+      
+      var map, infoWindow,    academyIW;
+      function initMap() {
+        //String for infoWindows
+        var greenString = '<div class="content">'+
+            '<div class="siteNotice">'+
+            '</div>'+
+            '<h1>Green Hill Cemetry</h1>'+
+            '<div class="bodyContent">'+
+                '<img src="img/pt6.jpg" alt="Green Hill Cemetery" height="150px" width="150px">' +
+                '<p class="blurb">This is the town’s second community cemetery (after the Old Town Cemetery) that was established for those of European descent in 1874.</p>' +
+            '<br> <div class="go"><a href="green.html">Learn More</a></div>'+
+            '</div>'+
+            '</div>'+
+            '</div>';
 
-    /* Optional: Makes the page fill the window. */
-    html,
-    body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-    }
-  </style>
-</head>
+        var locustString = '<div class="content">'+
+            '<div class="siteNotice">'+
+            '</div>'+
+            '<h1>Locust Grove Cemetery</h1>'+
+            '<div class="bodyContent">'+
+                '<img src="img/pt5.jpg" alt="Locust Grove Cemetery" height="150px" width="150px">' +
+                '<p class="blurb"> This is the town’s first African American community cemetery established in 1880 on land granted by the town council. </p>' +
+            '<br> <div class="go"><a href="locust.html">Learn More</a></div>'+
+            '</div>'+
+            '</div>'+
+            '</div>';
+        var orrickString = '<div class="content">'+
+            '<div class="siteNotice">'+
+            '</div>'+
+            '<h1>Orrick Chapel</h1>'+
+            '<div class="bodyContent">'+
+                '<img src="img/pt4.jpg" alt="Orrick Chapel" height="150px" width="150px">' +
+                '<p class="blurb">Methodist Meeting house built by African American Methodists after the Civil War to replace an earlier chapel that the same congregation had built in the 1850s.' +
+            '<br> <div class="go"><a href="orrick.html">Learn More</a></div>'+
+            '</div>'+
+            '</div>'+
+            '</div>';
 
-<body>
-  <div id="map"></div>
-  <script>
+        var methodistString = '<div class="content">'+
+            '<div class="siteNotice">'+
+            '</div>'+
+            '<h1>Methodist Church Cemetery</h1>'+
+            '<div class="bodyContent">'+
+                '<img src="img/pt3.jpg" alt="Methodist Church Cemetery" height="150px" width="150px">' +
+                '<p class="blurb">The property at 5271 Main is the site of the earliest Methodist meeting house and subsequent chapels with the cemetery located on the back of the lot.' +
+            '<br> <div class="go"><a href="methodist.html">Learn More</a></div>'+
+            '</div>'+
+            '</div>'+
+            '</div>';
 
-    var map, infoWindow, academyIW;
-    function initMap() {
-      //String for infoWindows
+        var reformString = '<div class="content">'+
+            '<div class="siteNotice">'+
+            '</div>'+
+            '<h1>Site of Lutheran and German Reform Church Chapel and Cemetery</h1>'+
+            '<div class="bodyContent">'+
+                '<img src="img/pt2.jpg" alt="Site of Lutheran and German Reform Church Chapel and Cemetery" height="150px" width="150px">' +
+                '<p class="blurb">This vacant lot in front of the Lutheran cemetery is where the earliest Lutheran chapels stood until 1906 when the current chapel across the street was dedicated.</p>' +
+            '<br> <div class="go"><a href="reform.html">Learn More</a></div>'+
+            '</div>'+
+            '</div>'+
+            '</div>';
 
-      var locustString = '<div class="content">' +
-        '<div class="siteNotice">' +
-        '</div>' +
-        '<h1>Locust Grove Cemetery</h1>' +
-        '<div class="bodyContent">' +
-        '<img src="img/pt5.jpg" alt="Locust Grove Cemetery" height="150px" width="150px">' +
-        '<p class="blurb"> This is the town’s first African American community cemetery established in 1880 on land granted by the town council. </p>' +
-        '<br> <div class="go"><a href="locust.html">Learn More</a></div>' +
-        '</div>' +
-        '</div>' +
-        '</div>';
-      var orrickString = '<div class="content">' +
-        '<div class="siteNotice">' +
-        '</div>' +
-        '<h1>Orrick Chapel</h1>' +
-        '<div class="bodyContent">' +
-        '<img src="img/pt4.jpg" alt="Orrick Chapel" height="150px" width="150px">' +
-        '<p class="blurb">Methodist Meeting house built by African American Methodists after the Civil War to replace an earlier chapel that the same congregation had built in the 1850s.' +
-        '<br> <div class="go"><a href="orrick.html">Learn More</a></div>' +
-        '</div>' +
-        '</div>' +
-        '</div>';
+        var academyString = '<div class="content">'+
+            '<div class="siteNotice">'+
+            '</div>'+
+            '<h1> Old Town Cemetery and site of town&#39;s East Academy</h1>'+
+            '<div class="bodyContent">'+
+                '<img src="img/pt1.jpg" alt="Old Town Cemetery and site of town&#39;s East Academy" height="150px" width="150px">' +
+                '<p class="blurb"> This is the oldest cemetery in town where the first settlers, including the Stephens family, are buried.</p>' +
+            '<br> <div class="go"><a href="mulberry.html">Learn More</a> </div>'+
+            '</div>'+
+            '</div>'+
+            '</div>';
 
-      var methodistString = '<div class="content">' +
-        '<div class="siteNotice">' +
-        '</div>' +
-        '<h1>Methodist Church Cemetery</h1>' +
-        '<div class="bodyContent">' +
-        '<img src="img/pt3.jpg" alt="Methodist Church Cemetery" height="150px" width="150px">' +
-        '<p class="blurb">The property at 5271 Main is the site of the earliest Methodist meeting house and subsequent chapels with the cemetery located on the back of the lot.' +
-        '<br> <div class="go"><a href="methodist.html">Learn More</a></div>' +
-        '</div>' +
-        '</div>' +
-        '</div>';
+        var academy = {lat: 39.081549, lng: -78.218520}
+        var reform = {lat: 39.082962, lng: -78.216955}
+        var methodist = {lat:39.086074, lng: -78.216593}
+        var orrick = {lat:39.08433, lng: -78.215692}
+        var locust = {lat:39.08433, lng: -78.220056}
+        var green = {lat: 39.085177, lng: -78.220705}
+        
+        greenIW = new google.maps.InfoWindow({
+          content: greenString,
+          maxWidth: 225
 
-      var reformString = '<div class="content">' +
-        '<div class="siteNotice">' +
-        '</div>' +
-        '<h1>Site of Lutheran and German Reform Church Chapel and Cemetery</h1>' +
-        '<div class="bodyContent">' +
-        '<img src="img/pt2.jpg" alt="Site of Lutheran and German Reform Church Chapel and Cemetery" height="150px" width="150px">' +
-        '<p class="blurb">This vacant lot in front of the Lutheran cemetery is where the earliest Lutheran chapels stood until 1906 when the current chapel across the street was dedicated.</p>' +
-        '<br> <div class="go"><a href="reform.html">Learn More</a></div>' +
-        '</div>' +
-        '</div>' +
-        '</div>';
+        });
 
-      var academyString = '<div class="content">' +
-        '<div class="siteNotice">' +
-        '</div>' +
-        '<h1> Old Town Cemetery and site of town&#39;s East Academy</h1>' +
-        '<div class="bodyContent">' +
-        '<img src="img/pt1.jpg" alt="Old Town Cemetery and site of town&#39;s East Academy" height="150px" width="150px">' +
-        '<p class="blurb"> This is the oldest cemetery in town where the first settlers, including the Stephens family, are buried.</p>' +
-        '<br> <div class="go"><a href="mulberry.html">Learn More</a> </div>' +
-        '</div>' +
-        '</div>' +
-        '</div>';
+        locustIW = new google.maps.InfoWindow({
+          content: locustString,
+          maxWidth: 225
 
-      var academy = { lat: 39.081549, lng: -78.218520 }
-      var reform = { lat: 39.082962, lng: -78.216955 }
-      var methodist = { lat: 39.086074, lng: -78.216593 }
-      var orrick = { lat: 39.08433, lng: -78.215692 }
-      var locust = { lat: 39.08433, lng: -78.220056 }
+        });
+        
+        orrickIW = new google.maps.InfoWindow({
+          content: orrickString,
+          maxWidth: 225
 
-      locustIW = new google.maps.InfoWindow({
-        content: locustString,
-        maxWidth: 225
+        });
 
-      });
+        reformIW = new google.maps.InfoWindow({
+          content: reformString,
+          maxWidth: 225
 
-      orrickIW = new google.maps.InfoWindow({
-        content: orrickString,
-        maxWidth: 225
+        });
+        academyIW = new google.maps.InfoWindow({
+          content: academyString,
+          maxWidth: 225
 
-      });
+        });
 
-      reformIW = new google.maps.InfoWindow({
-        content: reformString,
-        maxWidth: 225
+        methodistIW = new google.maps.InfoWindow({
+          content: methodistString,
+          maxWidth: 225
 
-      });
-      academyIW = new google.maps.InfoWindow({
-        content: academyString,
-        maxWidth: 225
+        });
 
-      });
+        map = new google.maps.Map(document.getElementById('map'), {
+          center: {lat: 39.085057, lng: -78.218221},
+          zoom: 16
+        });
+        var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
 
-      methodistIW = new google.maps.InfoWindow({
-        content: methodistString,
-        maxWidth: 225
+        var marker = new google.maps.Marker({
+            position: academy,
+            map: map, 
+            animation: google.maps.Animation.DROP,
+            icon: iconBase + 'library_maps.png'
 
-      });
+        });
 
-      map = new google.maps.Map(document.getElementById('map'), {
-        center: { lat: 39.085057, lng: -78.218221 },
-        zoom: 16
-      });
-      var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+        var marker1 = new google.maps.Marker({
+            position: reform,
+            map: map, 
+            animation: google.maps.Animation.DROP,
+            icon: iconBase + 'library_maps.png'
 
-      var marker = new google.maps.Marker({
-        position: academy,
-        map: map,
-        animation: google.maps.Animation.DROP,
-        icon: iconBase + 'library_maps.png'
+        });
 
-      });
+        var marker2 = new google.maps.Marker({
+            position: methodist,
+            map: map, 
+            animation: google.maps.Animation.DROP,
+            icon: iconBase + 'library_maps.png'
 
-      var marker1 = new google.maps.Marker({
-        position: reform,
-        map: map,
-        animation: google.maps.Animation.DROP,
-        icon: iconBase + 'library_maps.png'
+        });
 
-      });
+        var marker3 = new google.maps.Marker({
+          position: orrick,
+          map: map,
+          animation: google.maps.Animation.DROP,
+          icon: iconBase + 'library_maps.png'
 
-      var marker2 = new google.maps.Marker({
-        position: methodist,
-        map: map,
-        animation: google.maps.Animation.DROP,
-        icon: iconBase + 'library_maps.png'
+        })
 
-      });
+        var marker4 = new google.maps.Marker({
+          position: locust,
+          map: map,
+          animation: google.maps.Animation.DROP,
+          icon: iconBase + 'library_maps.png'
 
-      var marker3 = new google.maps.Marker({
-        position: orrick,
-        map: map,
-        animation: google.maps.Animation.DROP,
-        icon: iconBase + 'library_maps.png'
+        })
 
-      })
+        var marker5 = new google.maps.Marker({
+            position: green,
+            map: map, 
+            animation: google.maps.Animation.DROP,
+            icon: iconBase + 'library_maps.png'
 
-      var marker4 = new google.maps.Marker({
-        position: locust,
-        map: map,
-        animation: google.maps.Animation.DROP,
-        icon: iconBase + 'library_maps.png'
+        });
 
-      })
-      marker4.addListener('click', function () {
-        locustIW.open(map, marker4)
-      })
+        marker5.addListener('click', function() {
+          greenIW.open(map, marker5)
+        } )
 
-      marker3.addListener('click', function () {
-        orrickIW.open(map, marker3)
-      })
+        marker4.addListener('click', function() {
+          locustIW.open(map, marker4)
+        } )
 
-      marker2.addListener('click', function () {
-        methodistIW.open(map, marker2)
-      })
+        marker3.addListener('click', function() {
+          orrickIW.open(map, marker3)
+        } )
 
-      marker1.addListener('click', function () {
-        reformIW.open(map, marker1);
-      });
+        marker2.addListener('click', function() {
+          methodistIW.open(map, marker2)
+        })
 
-      marker.addListener('click', function () {
-        academyIW.open(map, marker);
-      });
+        marker1.addListener('click', function() {
+            reformIW.open(map, marker1);
+        });
+
+        marker.addListener('click', function() {
+            academyIW.open(map, marker);
+        });
 
 
-      infoWindow = new google.maps.InfoWindow;
-    }
+        infoWindow = new google.maps.InfoWindow;
+} 
      /*    // Try HTML5 geolocation.
         if (navigator.geolocation) {
           navigator.geolocation.getCurrentPosition(function(position) {
@@ -223,10 +250,9 @@
                               'Error: Your browser doesn\'t support geolocation.');
         infoWindow.open(map);
       } */
-  </script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAhYt-JJuTQOuDhvFBxJUoiDdgz1vEuNg&callback=initMap">
-
-  </script>
-</body>
-
+    </script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAhYt-JJuTQOuDhvFBxJUoiDdgz1vEuNg&callback=initMap">
+    </script>
+  </body>
 </html>

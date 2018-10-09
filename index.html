@@ -126,6 +126,12 @@
       var green = { lat: 39.085177, lng: -78.220705 }
       var stephens = { lat: 39.080298, lng: -78.222009 }
 
+      stephensIW = new google.maps.InfoWindow({
+        content: stephensString,
+        maxWidth: 225
+
+      });
+
       greenIW = new google.maps.InfoWindow({
         content: greenString,
         maxWidth: 225
@@ -214,6 +220,18 @@
         icon: iconBase + 'library_maps.png'
 
       });
+
+      var marker6 = new google.maps.Marker({
+        position: stephens,
+        map: map,
+        animation: google.maps.Animation.DROP,
+        icon: iconBase + 'library_maps.png'
+
+      });
+
+      marker6.addListener('click', function () {
+        stephensIW.open(map, marker6)
+      })
 
       marker5.addListener('click', function () {
         greenIW.open(map, marker5)

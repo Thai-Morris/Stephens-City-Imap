@@ -34,6 +34,42 @@
 
       //String for infoWindows
 
+        var storeString = '<div class="content">' +
+        '<div class="siteNotice">' +
+        '</div>' +
+        '<h1>Samuel Hull&#39;ss Store</h1>' +
+        '<div class="bodyContent">' +
+        '<img src="img/pt7.JPG" alt="Samuel Hull&#39;ss Store" height="150px" width="150px">' +
+        '<p class="blurb">Here Confederate Colonel Harry Gilmor nailed his note to Union General David Hunter, and where Union Major Joseph Stearns required the town’s people to take the Union’s oath of allegiance to spare the town from being burned.</p>' +
+        '<br> <div class="go"><a href="stephens.html">Learn More</a></div>' +
+        '</div>' +
+        '</div>' +
+        '</div>';
+
+        var bellString = '<div class="content">' +
+        '<div class="siteNotice">' +
+        '</div>' +
+        '<h1>Bell Air</h1>' +
+        '<div class="bodyContent">' +
+        '<img src="img/pt7.JPG" alt="Bell Air" height="150px" width="150px">' +
+        '<p class="blurb">Original home of Lewis Stephens Jr. and later home of John Bell Tilden, Revolutionary War veteran and Methodist minister.</p>' +
+        '<br> <div class="go"><a href="stephens.html">Learn More</a></div>' +
+        '</div>' +
+        '</div>' +
+        '</div>';
+
+        var baptistString = '<div class="content">' +
+        '<div class="siteNotice">' +
+        '</div>' +
+        '<h1>St. John&#39;ss Primitive Baptist Church</h1>' +
+        '<div class="bodyContent">' +
+        '<img src="img/pt7.JPG" alt="St. John&#39;ss Primitive Baptist Church" height="150px" width="150px">' +
+        '<p class="blurb">The African American Primitive Baptist Church building constructed in 1891 by members of that congregation.</p>' +
+        '<br> <div class="go"><a href="stephens.html">Learn More</a></div>' +
+        '</div>' +
+        '</div>' +
+        '</div>';
+
         var stephensString = '<div class="content">' +
         '<div class="siteNotice">' +
         '</div>' +
@@ -125,6 +161,27 @@
       var locust = { lat: 39.08433, lng: -78.220056 }
       var green = { lat: 39.085177, lng: -78.220705 }
       var stephens = { lat: 39.080298, lng: -78.222009 }
+      var baptist = { lat: 39.081189, lng: -78.219895}
+      var bell = { lat: 39.087827, lng: -78.218807}
+      var store = { lat: 39.084335, lng: -78.217094}
+
+      storeIW = new google.maps.InfoWindow({
+        content: stephensString,
+        maxWidth: 225
+
+      });
+
+      bellIW = new google.maps.InfoWindow({
+        content: stephensString,
+        maxWidth: 225
+
+      });
+
+      baptistIW = new google.maps.InfoWindow({
+        content: stephensString,
+        maxWidth: 225
+
+      });
 
       stephensIW = new google.maps.InfoWindow({
         content: stephensString,
@@ -228,6 +285,42 @@
         icon: iconBase + 'library_maps.png'
 
       });
+
+      var marker7 = new google.maps.Marker({
+        position: baptist,
+        map: map,
+        animation: google.maps.Animation.DROP,
+        icon: iconBase + 'library_maps.png'
+
+      });
+
+      var marker8 = new google.maps.Marker({
+        position: bell,
+        map: map,
+        animation: google.maps.Animation.DROP,
+        icon: iconBase + 'library_maps.png'
+
+      });
+
+      var marker9 = new google.maps.Marker({
+        position: store,
+        map: map,
+        animation: google.maps.Animation.DROP,
+        icon: iconBase + 'library_maps.png'
+
+      });
+
+      marker9.addListener('click', function () {
+        storeIW.open(map, marker9)
+      })
+
+      marker8.addListener('click', function () {
+        bellIW.open(map, marker8)
+      })
+
+      marker7.addListener('click', function () {
+        baptistIW.open(map, marker7)
+      })
 
       marker6.addListener('click', function () {
         stephensIW.open(map, marker6)

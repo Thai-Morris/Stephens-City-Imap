@@ -1,4 +1,0 @@
- Activity.loadLocation(locations.get(i));
-                Context context = this;
-                Intent intent = new Intent(context, infoPageFragment.class);
-                startActivity(intent);

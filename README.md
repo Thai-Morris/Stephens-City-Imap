@@ -1,3 +1,3 @@
-Stephen City Virtual Tour Web App
+#Stephen City Virtual Historical Tour Web App
 
-If you would like to make a pull request, just do so
+This web app was created out of love my Thai Morris and Hannah Smith.

@@ -2,7 +2,7 @@
 
 /*!
 
-The Stylesheet for the map
+The style sheet for the map
 
 Developed by Thai Morris
 
@@ -12,35 +12,22 @@ Developed by Thai Morris
 */
 
 @font-face {
+
     font-family: Economica-Bold;
     src: url(fonts/Economica-Bold.ttf);
 
 }
 
 @font-face {
+
     font-family: Lora-Regular;
-    src: url(fonts/Lora-Regular.ttf);
-    
+    src: url(fonts/Lora-Regular.ttf);   
+
 }
 
 h1 {
+
     font-family: Economica-Bold;
-
-}
-
-
-span {
-    font-weight:bold;
-}
-
-p {
-    font-family: Lora-Regular;
-}
-
-blockquote {
-
-    font-family: Lora-Regular;
-
 
 }
 
@@ -50,39 +37,65 @@ h2 {
 
 }
 
+p {
+
+    font-family: Lora-Regular;
+
+}
+
+blockquote {
+
+    font-family: Lora-Regular;
+
+}
+
+span {
+
+    font-weight: bold;
+
+}
+
 a:visited {
+
     color: white;
+
 }
 
 a:link {
+
     text-decoration: none;
+
 }
-
-
 
 /* Style the top navigation bar */
 .topnav {
+
     overflow: hidden;
     background-color: #333;
+
 }
 
 /* Style the topnav links */
 .topnav h1 {
+
     display: inline-block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
 
+}
 
 /* Style the content */
 .content {
+
     padding: 5%;
+
 }
 
 /* Style the buttons */
 .return {
+
     font-family: 'Dosis';
 	display:block;
 	font-size:16px;
@@ -101,9 +114,11 @@ a:link {
     position: relative;
     transform: translateY(-50%);
     left: 25%;
+
 }
 
-.go{
+.go {
+
     font-family: 'Dosis';
 	display:block;
 	font-size:16px;
@@ -121,17 +136,17 @@ a:link {
     line-height: 40px;
     border-radius: 50%;
     padding: 2%;
-    
 
 }
 
 .links {
 
     font-size: 17.5px;
+    
 }
 
 
-.return a{
+.return a {
 
 }
 
@@ -145,26 +160,27 @@ a:link {
    Media Queries
    ========================================================================== */
 
-
    @media screen and (min-width: 1081px) and (max-width: 4000px) {
-    .return{
-        width: 25%;
-        left: 38%;
-        padding: 1%;
 
-    }
+        .return {
 
-    .return a{
-        font-size: 35px;
+            width: 25%;
+            left: 38%;
+            padding: 1%;
+
+        }
+
+        .return a {
+
+            font-size: 35px;
+
+        }  
     }
-}
    
-
-
     @media screen and (max-width: 1080px) {
 
         .return {
-    
+
             font-size: 20px;
             background-color: #49b5e7;
             background-attachment: fixed;
@@ -173,66 +189,77 @@ a:link {
             border-radius: 50%;
             width: 15%;
             left: 43%;
+
             }
-    
         }
 
     @media screen and (max-width: 793px) {
 
-        .return
-        {width: 20.5%;
+        .return {
+
+            width: 20.5%;
+
+            }
         }
-    }
 
     @media screen and (max-width: 558px) {
 
-        .return
-        {width: 21.5%;
+        .return {
+
+            width: 21.5%;
+
+            }
         }
-    }
 
     @media screen and (max-width: 585px) {
+
         .return {
+
             width: 24.5%;
-
             padding: 1.5%;
-
             left: 38%;
+
         }
     }
 
     @media screen and (min-width: 488px) and (max-width: 584px) {
-        .return{
-            width: 26.5%;
 
+        .return {
+
+            width: 26.5%;
             left: 36%;
+
         }
     }
 
     @media screen and (min-width: 451px) and (max-width: 487px) {
-        .return{
-            width: 30%;
 
+        .return {
+
+            width: 30%;
             left: 34%;
+
         }
     }
 
     @media screen and (max-width: 450px) {
 
-        .return
-        {width: 37.5%;
-
-        left: 29%;
+        .return {
             
-        padding: 2%;
+            width: 37.5%;
+            left: 29%;
+            padding: 2%;
+
         }
     }
 
     @media screen and (max-width: 327px) {
-        .return {
-            width: 45%;
 
+        .return {
+
+            width: 45%;
             left: 25%;
+
         }
     }
     

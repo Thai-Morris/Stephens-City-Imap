@@ -2,12 +2,9 @@
 
 /*!
 
-The style sheet for the map
+CSS style sheet for the tour app
 
 Developed by Thai Morris
-
-
-
 
 */
 
@@ -142,7 +139,7 @@ a:link {
 .links {
 
     font-size: 17.5px;
-    
+
 }
 
 

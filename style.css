@@ -161,15 +161,15 @@ a:link {
 
         .return {
 
-            width: 25%;
-            left: 38%;
+            width: 15%;
+            left: 43%;
             padding: 1%;
 
         }
 
         .return a {
 
-            font-size: 35px;
+            font-size: 22.5px;
 
         }  
     }
@@ -178,7 +178,7 @@ a:link {
 
         .return {
 
-            font-size: 16px;
+            font-size: 21px;
             background-color: #49b5e7;
             background-attachment: fixed;
             color: white;

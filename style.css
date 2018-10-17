@@ -130,6 +130,11 @@ a:link {
     font-size: 17.5px;
 }
 
+
+.return a{
+
+}
+
 /* .blurb {
 
 
@@ -141,73 +146,97 @@ a:link {
    ========================================================================== */
 
 
-   @media screen and (min-width: 1081px) {
-
-    .return a {
-
-        font-size: 20px;
-        background-color: #49b5e7;
-        background-attachment: fixed;
-        color: white;
+   @media screen and (min-width: 1081px) and (max-width: 4000px) {
+    .return{
+        width: 25%;
+        left: 38%;
         padding: 1%;
-        border-radius: 50%;
 
-        }
-           
-
-   @media screen and (min-width: 768px) and (max-width: 1080px) {
-
-    html {
-    
-        padding: 1%;
-    
     }
+
+    .return a{
+        font-size: 35px;
+    }
+}
    
-    .return {
-        position: absolute;
-        top: 197%;
-        left: 44%;
-        width: 20%;
-        
-    }
-
-    .return a {
-
-        font-size: 20px;
-        background-color: #49b5e7;
-        background-attachment: fixed;
-        color: white;
-        padding: 1%;
-        border-radius: 50%;
 
 
-    }
-        
+    @media screen and (max-width: 1080px) {
+
+        .return {
     
-    
-    
-    @media screen and (max-width: 767px) {
-        html {
-           
-           width: 100%;   
-        }
-
-        .return a {
-
             font-size: 20px;
             background-color: #49b5e7;
             background-attachment: fixed;
             color: white;
             padding: 1%;
             border-radius: 50%;
-    
+            width: 15%;
+            left: 43%;
             }
     
-        .return{
-            position: relative;
-            top: 14px;
         }
-    
+
+    @media screen and (max-width: 793px) {
+
+        .return
+        {width: 20.5%;
+        }
     }
 
-}}
+    @media screen and (max-width: 558px) {
+
+        .return
+        {width: 21.5%;
+        }
+    }
+
+    @media screen and (max-width: 585px) {
+        .return {
+            width: 24.5%;
+
+            padding: 1.5%;
+
+            left: 38%;
+        }
+    }
+
+    @media screen and (min-width: 488px) and (max-width: 584px) {
+        .return{
+            width: 26.5%;
+
+            left: 36%;
+        }
+    }
+
+    @media screen and (min-width: 451px) and (max-width: 487px) {
+        .return{
+            width: 30%;
+
+            left: 34%;
+        }
+    }
+
+    @media screen and (max-width: 450px) {
+
+        .return
+        {width: 37.5%;
+
+        left: 29%;
+            
+        padding: 2%;
+        }
+    }
+
+    @media screen and (max-width: 327px) {
+        .return {
+            width: 45%;
+
+            left: 25%;
+        }
+    }
+    
+           
+
+
+

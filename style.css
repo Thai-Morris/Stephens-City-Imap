@@ -134,7 +134,7 @@ h2 {
 
    @media screen and (min-width: 1081px) {
 
-    a {
+    .return a {
 
         font-size: 40px;
     
@@ -149,7 +149,7 @@ h2 {
     
     }
    
-    .return{
+    .return {
         position: absolute;
         top: 197%;
         left: 44%;
@@ -157,7 +157,7 @@ h2 {
         
     }
 
-    a {
+    .return a {
 
     font-size: 32px;
 
@@ -172,7 +172,7 @@ h2 {
            width: 100%;   
         }
 
-        a {
+        .return a {
 
             font-size: 40px;
         

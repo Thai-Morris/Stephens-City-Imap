@@ -13,7 +13,7 @@ A small change
 */
 
 @font-face {
-    font-family: Economica;
+    font-family: Economica-Bold;
     src: url(fonts/Economica-Bold.ttf);
 
 }
@@ -24,20 +24,32 @@ A small change
     
 }
 
-.h1{
-    font-family: Economica;
+h1 {
+    font-family: Economica-Bold;
 
 }
 
 
-span{
+span {
     font-weight:bold;
 }
 
-p{
+p {
     font-family: Lora-Regular;
 }
 
+blockquote {
+
+    font-family: Lora-Regular;
+
+
+}
+
+h2 {
+
+    font-family: Lora-Regular;
+
+}
 
 
 
@@ -68,7 +80,7 @@ p{
 	display:block;
 	font-size:16px;
 	color:#ffffff;
-	background:#49b5e7;
+	background:#ffffff;
 	width:50%;
 	height:46px;
 	line-height:46px;

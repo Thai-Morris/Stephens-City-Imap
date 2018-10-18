@@ -136,9 +136,11 @@ a:link {
 
 }
 
-.links {
+a.links {
 
     font-size: 17.5px;
+    color: rgb(61, 61, 226);
+    text-decoration: underline;
 
 }
 

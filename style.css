@@ -157,7 +157,7 @@ a.links {
     padding: 0.5%;
     margin: 10px;
     width: 18.5%;
-    border: 3px solid #000;
+    
   }
   #legend h3 {
     margin-top: 0;
@@ -166,7 +166,10 @@ a.links {
     vertical-align: middle;
   }
 
- 
+#title {
+    padding: 0.5%;
+    text-align: center;
+}
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -202,6 +205,10 @@ a.links {
             left: 43%;
 
             }
+        }
+
+        #legend{
+            width: 30.5%;
         }
 
     @media screen and (max-width: 793px) {

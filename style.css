@@ -150,6 +150,21 @@ a.links {
 }
 
 
+#header{
+
+     /* Image background formatting*/
+     background-attachment: fixed;
+     background-position: center;
+     background-repeat: no-repeat;
+     background-size: cover;
+
+     /* Add the background image here.
+     background-image: url("img/[insert_file_name_here].jpg");
+     
+     */
+
+     
+}
 
 #legend {
     font-family: Arial, sans-serif;

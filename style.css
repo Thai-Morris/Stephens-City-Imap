@@ -168,7 +168,7 @@ a.links {
     background: white;
     padding: 0.5%;
     margin: 10px;
-    width: 50%;
+    width: 100%;
     opacity: 0.8;
     filter: alpha(opacity=30); /* For IE8 and earlier */
 

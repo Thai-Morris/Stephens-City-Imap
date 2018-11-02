@@ -161,13 +161,15 @@ a.links {
      
   }
 
-#legend {
+  #legend {
     font-family: Arial, sans-serif;
     background: white;
     padding: 0.5%;
     margin: 10px;
     width: 18.5%;
-    opacity: 40%;
+    opacity: 0.8;
+    filter: alpha(opacity=30); /* For IE8 and earlier */
+    }
     
   }
 

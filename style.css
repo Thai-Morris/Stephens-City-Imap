@@ -157,13 +157,9 @@ a.links {
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
-
-     /* Add the background image here.
-     background-image: url("img/[insert_file_name_here].jpg");
+     background-image: url("img/Sign.jpg");
      
-     */
- 
-}
+  }
 
 #legend {
     font-family: Arial, sans-serif;
@@ -176,16 +172,20 @@ a.links {
 
   #legend h3 {
     margin-top: 0;
+
   }
 
   #legend img {
     vertical-align: middle;
+
   }
 
   #title {
     padding: 0.5%;
     text-align: center;
     font-size: 24px;
+    color: white;
+
   }
 
 /* ==========================================================================

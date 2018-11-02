@@ -230,7 +230,8 @@ a.links {
         }
 
         #legend{
-            width: 100%;
+            width: 24%;
+
         }
 
     @media screen and (max-width: 793px) {

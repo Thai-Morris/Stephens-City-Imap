@@ -221,7 +221,7 @@ a.links {
 
         #legend {
 
-            width: 24%;
+            width: 22.5%;
             position: relative;
             left: 37%;
 
@@ -245,7 +245,7 @@ a.links {
 
         #legend {
 
-            width: 24%;
+            width: 30%;
             position: relative;
             left: 37%;
     
@@ -262,14 +262,14 @@ a.links {
 
         #legend {
 
-            width: 24%;
+            width: 40%;
             position: relative;
             left: 37%;
     
             }
         }
 
-    @media screen and (max-width: 558px) {
+    @media screen and (max-width: 658px) {
 
         .return {
 
@@ -279,7 +279,7 @@ a.links {
 
             #legend {
 
-            width: 24%;
+            width: 100%;
             position: relative;
             left: 37%;
     
@@ -298,7 +298,7 @@ a.links {
 
         #legend {
 
-            width: 24%;
+            width: 100%;
             position: relative;
             left: 37%;
 
@@ -316,7 +316,7 @@ a.links {
 
         #legend {
 
-            width: 24%;
+            width: 100%;
             position: relative;
             left: 37%;
 
@@ -334,7 +334,7 @@ a.links {
 
         #legend {
 
-            width: 24%;
+            width: 100%;
             position: relative;
             left: 37%;
 
@@ -353,9 +353,9 @@ a.links {
 
         #legend {
 
-            width: 24%;
+            width: 100%;
             position: relative;
-            left: 37%;
+            left: 30%;
 
         }
     }
@@ -371,9 +371,9 @@ a.links {
 
         #legend {
 
-            width: 24%;
+            width: 100%;
             position: relative;
-            left: 37%;
+            left: 30%;
 
         }
     }

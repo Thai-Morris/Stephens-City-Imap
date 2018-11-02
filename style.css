@@ -163,10 +163,11 @@ a.links {
 
 #legend {
     font-family: Arial, sans-serif;
-    background: #fff;
+    background: white;
     padding: 0.5%;
     margin: 10px;
     width: 18.5%;
+    opacity: 40%;
     
   }
 

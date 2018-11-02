@@ -169,12 +169,12 @@ a.links {
     width: 18.5%;
     opacity: 0.8;
     filter: alpha(opacity=30); /* For IE8 and earlier */
-    
+
   }
     
 
   #legend h3 {
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 0;
 
   }

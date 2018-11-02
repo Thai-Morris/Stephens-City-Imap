@@ -169,8 +169,11 @@ a.links {
     padding: 0.5%;
     margin: 10px;
     width: 100%;
+    height: 350px;
     opacity: 0.8;
     filter: alpha(opacity=30); /* For IE8 and earlier */
+    position: relative;
+    left: 37%;
 
   }
     
@@ -217,6 +220,14 @@ a.links {
             font-size: 22.5px;
 
         }  
+
+        #legend {
+
+            width: 24%;
+            position: relative;
+            left: 37%;
+
+        }
     }
    
     @media screen and (max-width: 1080px) {
@@ -233,14 +244,6 @@ a.links {
             left: 43%;
 
             }
-        }
-
-        #legend{
-
-            width: 24%;
-            position: relative;
-            left: 37%;
-
         }
 
     @media screen and (max-width: 793px) {

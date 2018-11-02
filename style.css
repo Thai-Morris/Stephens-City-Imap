@@ -244,6 +244,14 @@ a.links {
             left: 43%;
 
             }
+
+        #legend {
+
+            width: 24%;
+            position: relative;
+            left: 37%;
+    
+            }
         }
 
     @media screen and (max-width: 793px) {
@@ -253,6 +261,14 @@ a.links {
             width: 20.5%;
 
             }
+
+        #legend {
+
+            width: 24%;
+            position: relative;
+            left: 37%;
+    
+            }
         }
 
     @media screen and (max-width: 558px) {
@@ -261,6 +277,14 @@ a.links {
 
             width: 21.5%;
 
+            }
+
+            #legend {
+
+            width: 24%;
+            position: relative;
+            left: 37%;
+    
             }
         }
 
@@ -273,6 +297,14 @@ a.links {
             left: 38%;
 
         }
+
+        #legend {
+
+            width: 24%;
+            position: relative;
+            left: 37%;
+
+        }
     }
 
     @media screen and (min-width: 488px) and (max-width: 584px) {
@@ -283,6 +315,14 @@ a.links {
             left: 36%;
 
         }
+
+        #legend {
+
+            width: 24%;
+            position: relative;
+            left: 37%;
+
+        }
     }
 
     @media screen and (min-width: 451px) and (max-width: 487px) {
@@ -291,6 +331,14 @@ a.links {
 
             width: 30%;
             left: 34%;
+
+        }
+
+        #legend {
+
+            width: 24%;
+            position: relative;
+            left: 37%;
 
         }
     }
@@ -304,6 +352,14 @@ a.links {
             padding: 2%;
 
         }
+
+        #legend {
+
+            width: 24%;
+            position: relative;
+            left: 37%;
+
+        }
     }
 
     @media screen and (max-width: 327px) {
@@ -312,6 +368,14 @@ a.links {
 
             width: 45%;
             left: 25%;
+
+        }
+
+        #legend {
+
+            width: 24%;
+            position: relative;
+            left: 37%;
 
         }
     }

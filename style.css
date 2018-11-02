@@ -59,7 +59,7 @@ a:visited {
 }
 
 a:active {
-    
+
     color: white;
 }
 
@@ -168,7 +168,7 @@ a.links {
     background: white;
     padding: 0.5%;
     margin: 10px;
-    width: 18.5%;
+    width: 50%;
     opacity: 0.8;
     filter: alpha(opacity=30); /* For IE8 and earlier */
 

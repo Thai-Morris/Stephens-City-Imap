@@ -150,8 +150,7 @@ a.links {
 }
 
 
-#header{
-
+  #header{
      /* Image background formatting*/
      background-attachment: fixed;
      background-position: center;
@@ -162,7 +161,7 @@ a.links {
   }
 
   #legend {
-    font-family: Arial, sans-serif;
+    font-family: Lora-Regular;
     background: white;
     padding: 0.5%;
     margin: 10px;
@@ -176,6 +175,7 @@ a.links {
   #legend h3 {
     font-size: 22px;
     margin-top: 0;
+    font-family: Economica-Bold;
 
   }
 

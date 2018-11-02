@@ -162,8 +162,7 @@ a.links {
      background-image: url("img/[insert_file_name_here].jpg");
      
      */
-
-     
+ 
 }
 
 #legend {
@@ -174,17 +173,21 @@ a.links {
     width: 18.5%;
     
   }
+
   #legend h3 {
     margin-top: 0;
   }
+
   #legend img {
     vertical-align: middle;
   }
 
-#title {
+  #title {
     padding: 0.5%;
     text-align: center;
-}
+    font-size: 26.5px;
+  }
+
 /* ==========================================================================
    Media Queries
    ========================================================================== */

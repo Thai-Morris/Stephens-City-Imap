@@ -238,6 +238,8 @@ a.links {
         #legend{
 
             width: 24%;
+            position: relative;
+            left: 37%;
 
         }
 

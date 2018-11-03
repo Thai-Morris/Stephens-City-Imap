@@ -159,19 +159,25 @@ a.links {
      background-repeat: no-repeat;
      background-size: cover;
      background-image: url("img/Sign.jpg");
+     height: 40%;
      
   }
 
   #legend {
 
     font-family: Lora-Regular;
-    background: white;
     padding: 0.5%;
     margin: 10px;
-    opacity: 0.8;
-    filter: alpha(opacity=30); /* For IE8 and earlier */
+    background-color: rgb(255, 255, 128, 0);
+    color: white;
     position: relative;
-    left: 37%;
+    /* This element should be moved a little to the left. 
+    I am only using !important as a placeholder but we need to fix this so that we don't have to use !important.
+    */
+    left: 0% !important;
+
+    /*Using !important is bad CSS practice. It's just going to be a placeholder until one of us can fix this. */
+    top: 10%;
 
   }
     
@@ -184,18 +190,15 @@ a.links {
 
   }
 
-  #legend img {
 
-    vertical-align: middle;
-
-  }
 
   #title {
 
-    padding: 0.5%;
+    padding: 1%;
     text-align: center;
     font-size: 24px;
-    color: black;
+    color: white;
+    margin: 0%;
 
   }
 

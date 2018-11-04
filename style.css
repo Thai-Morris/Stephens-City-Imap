@@ -158,14 +158,15 @@ a.links {
      background-position: center;
      background-repeat: no-repeat;
      background-size: cover;
-     background-image: url("img/Sign.jpg");
-     height: 40%;
+     background-image: url("img/SignDark.jpg");
+     height: 50%;
      
   }
 
   #legend {
 
     font-family: Lora-Regular;
+    font-size: 15px;
     padding: 0.5%;
     margin: 10px;
     background-color: rgb(255, 255, 128, 0);

@@ -159,14 +159,14 @@ a.links {
      background-repeat: no-repeat;
      background-size: cover;
      background-image: url("img/SignDark.jpg");
-     height: 45%;
+     height: 40%;
      
   }
 
   #legend {
 
     font-family: Lora-Regular;
-    font-size: 13px;
+    font-size: 13.5px;
     padding: 0.5%;
     margin: 10px;
     font-weight: bold;
@@ -186,7 +186,7 @@ a.links {
 
   #legend h3 {
 
-    font-size: 22px;
+    font-size: 21px;
     margin-top: 0;
     font-family: Economica-Bold;
 
@@ -360,7 +360,7 @@ a.links {
 
             width: 100%;
             position: relative;
-            left: 30%;
+            left: 25%;
 
         }
     }

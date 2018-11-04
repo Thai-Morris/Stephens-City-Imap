@@ -169,6 +169,7 @@ a.links {
     font-size: 15px;
     padding: 0.5%;
     margin: 10px;
+    font-weight: bold;
     background-color: rgb(255, 255, 128, 0);
     color: white;
     position: relative;

@@ -159,14 +159,14 @@ a.links {
      background-repeat: no-repeat;
      background-size: cover;
      background-image: url("img/SignDark.jpg");
-     height: 50%;
+     height: 45%;
      
   }
 
   #legend {
 
     font-family: Lora-Regular;
-    font-size: 15px;
+    font-size: 13px;
     padding: 0.5%;
     margin: 10px;
     font-weight: bold;
@@ -176,7 +176,7 @@ a.links {
     /* This element should be moved a little to the left. 
     I am only using !important as a placeholder but we need to fix this so that we don't have to use !important.
     */
-    left: 0% !important;
+  /*  left: 0% !important; */
 
     /*Using !important is bad CSS practice. It's just going to be a placeholder until one of us can fix this. */
     top: 10%;
@@ -360,7 +360,7 @@ a.links {
 
             width: 100%;
             position: relative;
-            left: 34%;
+            left: 30%;
 
         }
     }
@@ -378,7 +378,7 @@ a.links {
 
             width: 100%;
             position: relative;
-            left: 34%;
+            left: 25%;
 
         }
     }

@@ -166,14 +166,14 @@ a.links {
      background-repeat: no-repeat;
      background-size: cover;
      background-image: url("img/SignTransparent.jpg");
-     height: 45%;
+     height: 40%;
      
   }
 
   #legend {
 
     font-family: Lora-Regular;
-    font-size: 13.5px;
+    font-size: 12px;
     padding: 0.5%;
     margin: 10px;
     font-weight: bold;
@@ -264,7 +264,7 @@ a.links {
 
             width: 30%;
             position: relative;
-            left: 38%;
+            left: 35%;
     
             }
         }
@@ -281,7 +281,7 @@ a.links {
 
             width: 40%;
             position: relative;
-            left: 38%;
+            left: 35%;
     
             }
         }
@@ -298,7 +298,7 @@ a.links {
 
             width: 100%;
             position: relative;
-            left: 38%;
+            left: 35%;
     
             }
         }
@@ -317,7 +317,7 @@ a.links {
 
             width: 100%;
             position: relative;
-            left: 38%;
+            left: 35%;
 
         }
     }
@@ -335,7 +335,7 @@ a.links {
 
             width: 100%;
             position: relative;
-            left: 38%;
+            left: 35%;
 
         }
     }
@@ -353,7 +353,7 @@ a.links {
 
             width: 100%;
             position: relative;
-            left: 38%;
+            left: 35%;
 
         }
     }
@@ -372,7 +372,7 @@ a.links {
 
             width: 100%;
             position: relative;
-            left: 38%;
+            left: 35%;
 
         }
     }
@@ -390,7 +390,7 @@ a.links {
 
             width: 100%;
             position: relative;
-            left: 38%;
+            left: 35%;
 
         }
     }

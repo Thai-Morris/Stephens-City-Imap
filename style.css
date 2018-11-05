@@ -240,8 +240,9 @@ a.links {
             width: 22.5%;
             position: relative;
             left: 40%;
-
+            
         }
+
     }
    
     @media screen and (max-width: 1080px) {

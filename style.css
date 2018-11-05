@@ -22,6 +22,14 @@ Developed by Thai Morris and Hannah Smith
 
 }
 
+/* Optional: Makes the page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
 
     font-family: Economica-Bold;
@@ -201,6 +209,10 @@ a.links {
     color: white;
     margin: 0%;
 
+  }
+
+  #map {
+    height: 100%;
   }
 
 /* ==========================================================================

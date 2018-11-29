@@ -406,6 +406,10 @@ a.links {
                 width: 87%;
 
             }
+            #welcome{
+                padding-right: 2%;
+                padding-left: 4;
+            }
         }
     }
 

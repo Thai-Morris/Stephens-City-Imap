@@ -396,10 +396,11 @@ a.links {
                 padding-right: 5%;
                 border: 5px solid red !important;
                 
+                
             }
 
             #legend{
-                left: 15%;
+                left: 5%;
             }
         }
     }

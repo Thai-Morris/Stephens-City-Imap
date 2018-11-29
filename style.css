@@ -272,7 +272,12 @@ a.links {
     
             }
         }
-
+@media only screen and (min-device-width: 400px) and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 3) { 
+          #header {
+              border: 5px solid red !important;
+      
+          }
+        }
     @media screen and (max-width: 793px) {
 
         .return {
@@ -399,17 +404,10 @@ a.links {
         }
     }
 
-    @media only screen 
-  and (min-device-width: 414px) 
-  and (max-device-width: 736px) 
-  and (-webkit-min-device-pixel-ratio: 3) { 
-	#header {
-        border: 5px solid red !important;
-
-    }
+    
     
 
-}
+
 
 
 

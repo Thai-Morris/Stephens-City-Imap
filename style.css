@@ -386,12 +386,15 @@ a.links {
 
         @media only screen and (max-width: 767px) {
             #header{
-                height: 55%
+                height: 55%;
+                padding-left: 5%;
+                padding-right: 5%;
+
                 
             }
 
             #legend{
-                left: 22%;
+                left: 15%;
             }
         }
     }

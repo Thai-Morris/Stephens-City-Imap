@@ -166,7 +166,7 @@ a.links {
      background-repeat: no-repeat;
      background-size: cover;
      background-image: url("img/BackgroundCropped.jpg");
-     height: 65%;
+     height: 55%;
      
   }
 
@@ -394,13 +394,17 @@ a.links {
                 height: 55%;
                 padding-left: 5%;
                 padding-right: 5%;
-                border: 5px solid red !important;
                 
                 
             }
+            #title{
+                padding:2%
+            }
 
             #legend{
-                left: 5%;
+                left: 0%;
+                width: 87%;
+
             }
         }
     }

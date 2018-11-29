@@ -404,7 +404,7 @@ a.links {
   and (max-device-width: 736px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
 	#header {
-        border: 5px solid brown !important;
+        border: 5px solid red !important;
 
     }
     

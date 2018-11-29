@@ -170,7 +170,7 @@ a.links {
      
   }
 
-  #welcome { color:white; font-weight: bold; position: relative; top: 10%; font-size: smaller; padding-bottom: 2.5%; padding-right: 2%; padding-left: 2%;
+  #welcome { color:white; font-weight: bold; position: relative; top: 10%; font-size: smaller; padding-bottom: 2.5%; padding-right: 5%; padding-left: 5%;
 
   }
 
@@ -378,6 +378,21 @@ a.links {
             position: relative;
             left: 25%;
 
+        }
+    }
+
+
+    @supports (-webkit-overflow-scrolling: touch) {
+
+        @media only screen and (max-width: 767px) {
+            #header{
+                height: 55%
+                
+            }
+
+            #legend{
+                left: 22%;
+            }
         }
     }
 

@@ -418,7 +418,7 @@ a.links {
         /* Iphone Resolution for models less than 8 */
         @media only screen and (max-width: 667px) and (orientation: portrait){
             #header{
-                height: 56%;
+                height: 65%;
                 /* padding-left: 5%;
                 padding-right: 5%; */
                 border: 2.5px solid black !important;
@@ -429,7 +429,7 @@ a.links {
 
             #legend{
                 left: 0%;
-                right:75% !important;
+                right:100% !important;
                 width: 100%;
                 border: 5px solid green !important;
 

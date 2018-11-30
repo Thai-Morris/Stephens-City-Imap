@@ -424,7 +424,7 @@ a.links {
                 height: 56%;
                 /* padding-left: 5%;
                 padding-right: 5%; */
-                border: 2.5px solid blue !important;
+                border: 2.5px solid red !important;
                 
                 
             } 
@@ -432,7 +432,7 @@ a.links {
 
             #legend{
                 left: 0%;
-                right:15%;
+                right:25%;
                 width: 100%;
 
             }

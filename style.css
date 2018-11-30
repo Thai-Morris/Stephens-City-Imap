@@ -22,6 +22,10 @@ Developed by Thai Morris and Hannah Smith
 
 }
 
+/* Global properites, these are the parents of all the css properties in oder of very broad to very specific.
+Change only when you know what you're doing.
+*/
+
 /* Optional: Makes the page fill the window. */
 html,
 body {
@@ -157,7 +161,7 @@ a.links {
 
 }
 
-
+/* ID tags for more specific elements.*/
   #header {
 
      /* Image background formatting*/
@@ -173,7 +177,7 @@ a.links {
   #welcome { color:white; font-weight: bold; position: relative; top: 10%; font-size: smaller; padding-bottom: 2.5%; padding-right: 5%; padding-left: 5%;
 
   }
-
+  /* Map Key aka Legend aka element where the icons are at above the welcome text but below the title. */
   #legend {
 
     font-family: Lora-Regular;
@@ -184,12 +188,6 @@ a.links {
     background-color: rgb(255, 255, 128, 0);
     color: white;
     position: relative;
-    /* This element should be moved a little to the left. 
-    I am only using !important as a placeholder but we need to fix this so that we don't have to use !important.
-    */
-  /*  left: 0% !important; */
-
-    /*Using !important is bad CSS practice. It's just going to be a placeholder until one of us can fix this. */
     top: 10%;
 
   }
@@ -222,7 +220,15 @@ a.links {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
+  /*
 
+  Media queries target particular devices at particular situations, if your device is displaying something wrong here. 
+
+  There is a huge chance that something is wrong responsively.
+
+  iOS devices are really special so scroll down further to see where they are at.
+
+  */
    @media screen and (min-width: 1081px) and (max-width: 4000px) {
 
         .return {
@@ -248,6 +254,8 @@ a.links {
         }
 
     }
+
+    /* Resolution for most tablets*/
    
     @media screen and (max-width: 1080px) {
 
@@ -272,18 +280,7 @@ a.links {
     
             }
         }
-@media only screen and (min-device-width: 400px) and (max-device-width: 800px) and (-webkit-min-device-pixel-ratio: 3) { 
-          #header {
-              border: 5px solid red !important;
-            
-      
-          }
-
-          #welcome {
-
-            border: 5px solid blue !important;
-          }
-        }
+    /* These are the resolutions for differnt mobile devices*/
     @media screen and (max-width: 793px) {
 
         .return {
@@ -392,7 +389,7 @@ a.links {
         }
     }
 
-
+    /* Iphone X and above*/
     @supports (-webkit-overflow-scrolling: touch) {
 
         @media only screen and (max-width: 767px) and (orientation: portrait) {
@@ -418,7 +415,7 @@ a.links {
                 padding-left: 4%;
             }
         }
-
+        /* Iphone Resolution for models less than 8 */
         @media only screen and (max-width: 667px) and (orientation: portrait){
             #header{
                 height: 56%;
@@ -434,6 +431,7 @@ a.links {
                 left: 0%;
                 right:75% !important;
                 width: 100%;
+                border: 5px solid green !important;
 
             }
             #welcome{

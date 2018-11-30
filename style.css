@@ -427,12 +427,12 @@ a.links {
                 border: 5px solid blue !important;
                 
                 
-            }
+            } 
            
 
             #legend{
-                left: 0%;
-                width: 87%;
+                left: 10%;
+                width: 90%;
 
             }
             #welcome{

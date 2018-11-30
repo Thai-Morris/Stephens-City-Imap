@@ -421,17 +421,17 @@ a.links {
 
         @media only screen and (max-width: 667px) and (orientation: portrait){
             #header{
-                height: 55%;
+                height: 56%;
                 /* padding-left: 5%;
                 padding-right: 5%; */
-                border: 5px solid blue !important;
+                border: 2.5px solid blue !important;
                 
                 
             } 
            
 
             #legend{
-                left: 10%;
+                left: 0%;
                 width: 90%;
 
             }

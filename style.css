@@ -400,6 +400,7 @@ a.links {
                 height: 55%;
                 padding-left: 5%;
                 padding-right: 5%;
+                border: 5px solid red !important;
                 
                 
             }
@@ -414,9 +415,37 @@ a.links {
             }
             #welcome{
                 padding-right: 2%;
-                padding-left: 4;
+                padding-left: 4%;
             }
         }
+
+        @media only screen and (max-width: 667px) and (orientation: portrait){
+            #header{
+                height: 55%;
+                /* padding-left: 5%;
+                padding-right: 5%; */
+                border: 5px solid blue !important;
+                
+                
+            }
+           
+
+            #legend{
+                left: 0%;
+                width: 87%;
+
+            }
+            #welcome{
+                padding-right: 2%;
+                padding-left: 4%;
+            }
+            
+
+
+
+        }
+
+        
     }
 
     

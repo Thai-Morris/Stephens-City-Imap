@@ -448,23 +448,12 @@ a.links {
             #legend{
                 width: 84%;
                 left: 0%;
-                border:  3% solid brown;
             }
 
         }
 
         
     }
-
-    
-    
-
-
-
-
-
-
-
 
     @media screen and (max-width: 327px) {
 
@@ -477,9 +466,10 @@ a.links {
 
         #legend {
 
-            width: 62%;
+            width: 84%;
             position: relative;
-            left: 25%;
+            left: 0%;
+            border:  5px solid yellow;
 
         }
     }

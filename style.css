@@ -312,11 +312,12 @@ a.links {
                 left: 35%;
         
                 }  
-            }
+            
 
             #header{
                 height: 80%;
             }
+        }
 
     @media screen and (max-width: 658px) {
 

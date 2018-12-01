@@ -444,7 +444,7 @@ a.links {
 
         }
         /* Iphone resolution for models less than 4*/
-        @media only scree and (max-width: 327px) and (orientation: portrait) {
+        @media only screen and (max-width: 350px) and (orientation: portrait) {
             #legend{
                 width: 84%;
                 left: 0%;

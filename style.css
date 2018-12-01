@@ -421,7 +421,7 @@ a.links {
                 height: 65%;
                 /* padding-left: 5%;
                 padding-right: 5%; */
-                border: 2.5px solid black !important;
+                
                 
                 
             } 
@@ -431,7 +431,7 @@ a.links {
                 left: 0%;
                 right:100% !important;
                 width: 100%;
-                border: 5px solid green !important;
+                
 
             }
             #welcome{
@@ -469,7 +469,7 @@ a.links {
             width: 84%;
             position: relative;
             left: 0%;
-            border:  5px solid yellow;
+            
 
         }
     }

@@ -443,6 +443,15 @@ a.links {
 
 
         }
+        /* Iphone resolution for models less than 4*/
+        @media only scree and (max-width: 327px) and (orientation: portrait) {
+            #legend{
+                width: 84%;
+                left: 0%;
+                border:  3% solid brown;
+            }
+
+        }
 
         
     }

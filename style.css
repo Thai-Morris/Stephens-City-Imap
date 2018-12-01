@@ -298,6 +298,22 @@ a.links {
             }
         }
 
+
+        @media screen and (max-width: 793px) and (orientation: landscape) {
+
+            .return {
+                width: 20.5%;
+                }
+    
+            #legend {
+    
+                width: 40%;
+                position: relative;
+                left: 35%;
+        
+                }
+            }
+
     @media screen and (max-width: 658px) {
 
         .return {
@@ -397,9 +413,6 @@ a.links {
                 height: 55%;
                 padding-left: 5%;
                 padding-right: 5%;
-                
-                
-                
             }
             #title{
                 padding:2%
@@ -419,8 +432,6 @@ a.links {
         @media only screen and (max-width: 667px) and (orientation: portrait){
             #header{
                 height: 65%;
-                /* padding-left: 5%;
-                padding-right: 5%; */
                 
                 
                 

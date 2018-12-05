@@ -272,21 +272,23 @@ a.links {
 
     /* Resolution for most tablets*/
    
-    @media screen and (max-width: 1080px) and (orientation: landscape) {
+@media screen and (min-width: 794px) and (max-width: 1080px) and (orientation: landscape) {
 
         #header{
             height: 40%;
         }
 
         }
-    @media screen and (max-width: 1080px) and (orientation: portrait){
+@media screen and (min-width:794px) and (max-width: 1080px) and (orientation: portrait){
         #header{
             height: 30%;
         }
 
     }
-    /* These are the resolutions for differnt mobile devices*/
-    @media screen and (max-width: 793px) {
+
+/* These are the resolutions for differnt mobile devices*/
+
+@media screen and (max-width: 793px) {
 
         .return {
 
@@ -303,8 +305,8 @@ a.links {
             }
         }
 
-
-    @media screen and (max-width: 793px) and (orientation: landscape) {
+        /* */
+    @media screen and (min-width: 659px) and (max-width: 793px) and (orientation: landscape) {
 
             .return {
                 width: 20.5%;
@@ -321,7 +323,7 @@ a.links {
                 height: 100%;
             }
         }
-
+    /* */
     @media screen and (max-width: 658px) {
 
         .return {
@@ -339,7 +341,7 @@ a.links {
             }
         }
 
-    @media screen and (max-width: 585px) {
+@media screen and (max-width: 585px) {
 
         .return {
 
@@ -358,7 +360,7 @@ a.links {
         }
     }
 
-    @media screen and (min-width: 488px) and (max-width: 584px) {
+@media screen and (min-width: 488px) and (max-width: 584px) {
 
         .return {
 
@@ -376,7 +378,7 @@ a.links {
         }
     }
 
-    @media screen and (min-width: 451px) and (max-width: 487px) {
+@media screen and (min-width: 451px) and (max-width: 487px) {
 
         .return {
 
@@ -394,7 +396,7 @@ a.links {
         }
     }
 
-    @media screen and (max-width: 450px) {
+@media screen and (max-width: 450px) {
 
         .return {
             
@@ -413,8 +415,8 @@ a.links {
         }
     }
 
-    /* Iphone X and above*/
-    @supports (-webkit-overflow-scrolling: touch) {
+/* Iphone X and above*/
+@supports (-webkit-overflow-scrolling: touch) {
 
         @media only screen and (max-width: 767px) and (orientation: portrait) {
             #header{
@@ -473,8 +475,13 @@ a.links {
 
         
     }
+@media only screen and (min-width: 328px) and (max-width: 486px) and (orientation: landscape) {
+    #header{
+        height: 65%;
+    }
 
-    @media screen and (max-width: 327px) {
+}
+@media screen and (max-width: 327px) {
 
         .return {
 

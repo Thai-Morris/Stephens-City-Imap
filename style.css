@@ -275,7 +275,7 @@ a.links {
 @media screen and (min-width: 794px) and (max-width: 1080px) and (orientation: landscape) {
 
         #header{
-            height: 40%;
+            height: 42.5%;
         }
 
         }
@@ -475,6 +475,12 @@ a.links {
 
         
     }
+
+@media only screen and (max-width: 480px) {
+    #header{
+        height: 63%;
+    }
+}
 @media only screen and (min-width: 328px) and (max-width: 486px) and (orientation: landscape) {
     #header{
         height: 65%;

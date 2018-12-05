@@ -174,11 +174,11 @@ a.links {
      
   }
 
-  #welcome { color:white; font-weight: bold; position: relative; top: 10%; font-size: smaller; padding-bottom: 2.5%; padding-right: 5%; padding-left: 5%;
+#welcome { color:white; font-weight: bold; position: relative; top: 10%; font-size: smaller; padding-bottom: 2.5%; padding-right: 5%; padding-left: 5%;
 
   }
   /* Map Key aka Legend aka element where the icons are at above the welcome text but below the title. */
-  #legend {
+#legend {
 
     font-family: Lora-Regular;
     font-size: 12px;
@@ -193,7 +193,7 @@ a.links {
   }
     
 
-  #legend h3 {
+#legend h3 {
 
     font-size: 21px;
     margin-top: 0;
@@ -203,7 +203,7 @@ a.links {
 
 
 
-  #title {
+#title {
 
     padding: 1%;
     text-align: center;
@@ -213,7 +213,7 @@ a.links {
 
   }
 
-  #map {
+#map {
     height: 100%;
   }
 
@@ -229,7 +229,7 @@ a.links {
   iOS devices are really special so scroll down further to see where they are at.
 
   */
-   @media screen and (min-width: 1081px) and (max-width: 4000px) {
+@media screen and (min-width: 1081px) and (max-width: 4000px) {
 
         .return {
 
@@ -255,7 +255,7 @@ a.links {
 
     }
 
-    @media screen and (max-width: 1080px){
+@media screen and (max-width: 1080px){
         .return {
 
             font-size: 21px;

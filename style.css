@@ -305,6 +305,9 @@ a.links {
             }
         }
 
+    @media screen and (min-width: 659px) and (max-width: 793px) and (orientation: portrait) {
+            #header{height: 50%;}
+        }
         /* */
     @media screen and (min-width: 659px) and (max-width: 793px) and (orientation: landscape) {
 
@@ -475,15 +478,22 @@ a.links {
 
         
     }
+@media only screen and (min-width: 487px) and (max-width: 658) and (orientation: landscape) {
+
+    #header{
+        height: 65%;
+    }
+
+}
 
 @media only screen and (max-width: 480px) {
     #header{
-        height: 63%;
+        height: 80%;
     }
 }
 @media only screen and (min-width: 328px) and (max-width: 486px) and (orientation: landscape) {
     #header{
-        height: 65%;
+        height: 100%;
     }
 
 }

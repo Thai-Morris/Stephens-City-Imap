@@ -229,7 +229,7 @@ a.links {
   iOS devices are really special so scroll down further to see where they are at.
 
   */
-@media screen and (min-width: 1081px) and (max-width: 4000px) {
+@media screen and (min-width: 1081px) {
 
         .return {
 
@@ -253,6 +253,10 @@ a.links {
             
         }
 
+        #header{
+            height: 50%;
+        }
+
     }
 
 @media screen and (max-width: 1080px){
@@ -272,16 +276,16 @@ a.links {
 
     /* Resolution for most tablets*/
    
-@media screen and (min-width: 794px) and (max-width: 1080px) and (orientation: landscape) {
+@media screen and (min-width: 800px) and (max-width: 1080px) and (orientation: landscape) {
 
         #header{
             height: 42.5%;
         }
 
         }
-@media screen and (min-width:794px) and (max-width: 1080px) and (orientation: portrait){
+@media screen and (min-width:800px) and (max-width: 1080px) and (orientation: portrait){
         #header{
-            height: 30%;
+            height: 40%;
         }
 
     }

@@ -1,5 +1,4 @@
 @charset "UTF-8";
-
 /*!
 
 CSS style sheet for the self-guided tour web app
@@ -9,17 +8,13 @@ Developed by Thai Morris and Hannah Smith
 */
 
 @font-face {
-
     font-family: Economica-Bold;
     src: url(fonts/Economica-Bold.ttf);
-
 }
 
 @font-face {
-
     font-family: Lora-Regular;
-    src: url(fonts/Lora-Regular.ttf);   
-
+    src: url(fonts/Lora-Regular.ttf);
 }
 
 /* Global properites, these are the parents of all the css properties in oder of very broad to very specific.
@@ -27,159 +22,143 @@ Change only when you know what you're doing.
 */
 
 /* Optional: Makes the page fill the window. */
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 h1 {
-
     font-family: Economica-Bold;
-
 }
 
 h2 {
-
     font-family: Lora-Regular;
-
 }
 
 p {
-
     font-family: Lora-Regular;
-
 }
 
 blockquote {
-
     font-family: Lora-Regular;
-
 }
 
 span {
-
     font-weight: bold;
-
 }
 
 a:visited {
-
     color: white;
-
 }
 
 a:active {
-
     color: white;
 }
 
 a:link {
-
     text-decoration: none;
     color: white;
-
 }
 
 /* Style the top navigation bar */
-.topnav {
 
+.topnav {
     overflow: hidden;
     background-color: #333;
-
 }
 
 /* Style the topnav links */
-.topnav h1 {
 
+.topnav h1 {
     display: inline-block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-
 }
 
 /* Style the content */
+
 .content {
-
     padding: 5%;
-
 }
 
 /* Style the buttons */
-.return {
 
+.return {
     font-family: 'Dosis';
-	display:block;
-	font-size:16px;
-	color:#ffffff;
-	background:#49b5e7;
-	width:50%;
-	height:46px;
-	line-height:46px;
+    display: block;
+    font-size: 16px;
+    color: #ffffff;
+    background: #49b5e7;
+    width: 50%;
+    height: 46px;
+    line-height: 46px;
     border-radius: 50%;
-	text-align:center;
-	text-transform:uppercase;
-	font-weight: 600;
-	transition:all 0.2s ease-in-out;
-	-moz-transition:all 0.2s ease-in-out;
-    -webkit-transition:all 0.2s ease-in-out;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
     position: relative;
     transform: translateY(-50%);
     left: 25%;
-
 }
 
 .go {
-
     font-family: 'Dosis';
-	display:block;
-	font-size:16px;
-	color:#ffffff;
-	background:#49b5e7;
-	width: 60%;
-	line-height:46px;
-	text-align:center;
-	text-transform:uppercase;
-	font-weight: 600;
-	transition:all 0.2s ease-in-out;
-	-moz-transition:all 0.2s ease-in-out;
-    -webkit-transition:all 0.2s ease-in-out;
+    display: block;
+    font-size: 16px;
+    color: #ffffff;
+    background: #49b5e7;
+    width: 60%;
+    line-height: 46px;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 0.2s ease-in-out;
     line-height: 40px;
     border-radius: 50%;
     padding: 2%;
-
 }
 
 a.links {
-
     font-size: 17.5px;
     color: rgb(61, 61, 226);
     text-decoration: underline;
-
 }
 
 /* ID tags for more specific elements.*/
-  #header {
 
-     /* Image background formatting*/
-     background-attachment: fixed;
-     background-position: center;
-     background-repeat: no-repeat;
-     background-size: cover;
-     background-image: url("img/BackgroundCropped.jpg");
-     height: 55%;
-     
-  }
+#header {
+    /* Image background formatting*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("img/BackgroundCropped.jpg");
+    height: 55%;
+}
 
-#welcome { color:white; font-weight: bold; position: relative; top: 10%; font-size: smaller; padding-bottom: 2.5%; padding-right: 5%; padding-left: 5%;
+#welcome {
+    color: white;
+    font-weight: bold;
+    position: relative;
+    top: 10%;
+    font-size: smaller;
+    padding-bottom: 2.5%;
+    padding-right: 5%;
+    padding-left: 5%;
+}
 
-  }
-  /* Map Key aka Legend aka element where the icons are at above the welcome text but below the title. */
+/* Map Key aka Legend aka element where the icons are at above the welcome text but below the title. */
+
 #legend {
-
     font-family: Lora-Regular;
     font-size: 12px;
     padding: 0.5%;
@@ -189,338 +168,255 @@ a.links {
     color: white;
     position: relative;
     top: 10%;
-
-  }
-    
+}
 
 #legend h3 {
-
     font-size: 21px;
     margin-top: 0;
     font-family: Economica-Bold;
-
-  }
-
-
+}
 
 #title {
-
     padding: 1%;
     text-align: center;
     font-size: 24px;
     color: white;
     margin: 0%;
-
-  }
+}
 
 #map {
     height: 100%;
-  }
+}
 
 /* ==========================================================================
    Media Queries
    ========================================================================== */
-  /*
 
-  Media queries target particular devices at particular situations, if your device is displaying something wrong here. 
+/*
 
-  There is a huge chance that something is wrong responsively.
+  Media queries target particular devices at particular situations
+  
+  If your device is displaying something wrong here, there is a huge chance that something is wrong responsively.
 
   iOS devices are really special so scroll down further to see where they are at.
 
   */
+
 @media screen and (min-width: 1081px) {
-
-        .return {
-
-            width: 15%;
-            left: 43%;
-            padding: 1%;
-
-        }
-
-        .return a {
-
-            font-size: 22.5px;
-
-        }  
-
-        #legend {
-
-            width: 22.5%;
-            position: relative;
-            left: 40%;
-            
-        }
-
-        #header{
-            height: 50%;
-        }
-
+    .return {
+        width: 15%;
+        left: 43%;
+        padding: 1%;
     }
-
-@media screen and (max-width: 1080px){
-        .return {
-
-            font-size: 21px;
-            background-color: #49b5e7;
-            background-attachment: fixed;
-            color: white;
-            padding: 1%;
-            border-radius: 50%;
-            width: 15%;
-            left: 43%;
-
-            }
+    .return a {
+        font-size: 22.5px;
     }
+    #legend {
+        width: 22.5%;
+        position: relative;
+        left: 40%;
+    }
+    #header {
+        height: 50%;
+    }
+}
 
-    /* Resolution for most tablets*/
-   
+@media screen and (max-width: 1080px) {
+    .return {
+        font-size: 21px;
+        background-color: #49b5e7;
+        background-attachment: fixed;
+        color: white;
+        padding: 1%;
+        border-radius: 50%;
+        width: 15%;
+        left: 43%;
+    }
+}
+
+/* Resolution for most tablets*/
+
 @media screen and (min-width: 800px) and (max-width: 1080px) and (orientation: landscape) {
-
-        #header{
-            height: 42.5%;
-        }
-
-        }
-@media screen and (min-width:800px) and (max-width: 1080px) and (orientation: portrait){
-        #header{
-            height: 40%;
-        }
-
+    #header {
+        height: 42.5%;
     }
+}
 
-/* These are the resolutions for differnt mobile devices*/
+@media screen and (min-width:800px) and (max-width: 1080px) and (orientation: portrait) {
+    #header {
+        height: 40%;
+    }
+}
+
+/* These are the resolutions for different mobile devices */
 
 @media screen and (max-width: 793px) {
+    .return {
+        width: 20.5%;
+    }
+    #legend {
+        width: 40%;
+        position: relative;
+        left: 35%;
+    }
+}
 
-        .return {
+@media screen and (min-width: 659px) and (max-width: 793px) and (orientation: portrait) {
+    #header {
+        height: 50%;
+    }
+}
 
-            width: 20.5%;
+/* */
 
-            }
+@media screen and (min-width: 659px) and (max-width: 793px) and (orientation: landscape) {
+    .return {
+        width: 20.5%;
+    }
+    #legend {
+        width: 40%;
+        position: relative;
+        left: 35%;
+    }
+    #header {
+        height: 100%;
+    }
+}
 
-        #legend {
+/* */
 
-            width: 40%;
-            position: relative;
-            left: 35%;
-    
-            }
-        }
-
-    @media screen and (min-width: 659px) and (max-width: 793px) and (orientation: portrait) {
-            #header{height: 50%;}
-        }
-        /* */
-    @media screen and (min-width: 659px) and (max-width: 793px) and (orientation: landscape) {
-
-            .return {
-                width: 20.5%;
-                }
-    
-            #legend {
-    
-                width: 40%;
-                position: relative;
-                left: 35%;
-        
-                }  
-            #header{
-                height: 100%;
-            }
-        }
-    /* */
-    @media screen and (max-width: 658px) {
-
-        .return {
-
-            width: 21.5%;
-
-            }
-
-            #legend {
-
-            width: 62%;
-            position: relative;
-            left: 35%;
-    
-            }
-        }
+@media screen and (max-width: 658px) {
+    .return {
+        width: 21.5%;
+    }
+    #legend {
+        width: 62%;
+        position: relative;
+        left: 35%;
+    }
+}
 
 @media screen and (max-width: 585px) {
-
-        .return {
-
-            width: 24.5%;
-            padding: 1.5%;
-            left: 38%;
-
-        }
-
-        #legend {
-
-            width: 62%;
-            position: relative;
-            left: 35%;
-
-        }
+    .return {
+        width: 24.5%;
+        padding: 1.5%;
+        left: 38%;
     }
+    #legend {
+        width: 62%;
+        position: relative;
+        left: 35%;
+    }
+}
 
 @media screen and (min-width: 488px) and (max-width: 584px) {
-
-        .return {
-
-            width: 26.5%;
-            left: 36%;
-
-        }
-
-        #legend {
-
-            width: 62%;
-            position: relative;
-            left: 35%;
-
-        }
+    .return {
+        width: 26.5%;
+        left: 36%;
     }
+    #legend {
+        width: 62%;
+        position: relative;
+        left: 35%;
+    }
+}
 
 @media screen and (min-width: 451px) and (max-width: 487px) {
-
-        .return {
-
-            width: 30%;
-            left: 34%;
-
-        }
-
-        #legend {
-
-            width: 62%;
-            position: relative;
-            left: 25%;
-
-        }
+    .return {
+        width: 30%;
+        left: 34%;
     }
+    #legend {
+        width: 62%;
+        position: relative;
+        left: 25%;
+    }
+}
 
 @media screen and (max-width: 450px) {
-
-        .return {
-            
-            width: 37.5%;
-            left: 29%;
-            padding: 2%;
-
-        }
-
-        #legend {
-
-            width: 62%;
-            position: relative;
-            left: 25%;
-
-        }
+    .return {
+        width: 37.5%;
+        left: 29%;
+        padding: 2%;
     }
+    #legend {
+        width: 62%;
+        position: relative;
+        left: 25%;
+    }
+}
 
-/* Iphone X and above*/
+/* iPhone X and above*/
+
 @supports (-webkit-overflow-scrolling: touch) {
-
-        @media only screen and (max-width: 767px) and (orientation: portrait) {
-            #header{
-                height: 55%;
-                padding-left: 5%;
-                padding-right: 5%;
-            }
-            #title{
-                padding:2%
-            }
-
-            #legend{
-                left: 0%;
-                width: 87%;
-
-            }
-            #welcome{
-                padding-right: 2%;
-                padding-left: 4%;
-            }
+    @media only screen and (max-width: 767px) and (orientation: portrait) {
+        #header {
+            height: 55%;
+            padding-left: 5%;
+            padding-right: 5%;
         }
-        /* Iphone Resolution for models less than 8 */
-        @media only screen and (max-width: 667px) and (orientation: portrait){
-            #header{
-                height: 65%;
-                
-                
-                
-            } 
-           
-
-            #legend{
-                left: 0%;
-                right:100% !important;
-                width: 100%;
-                
-
-            }
-            #welcome{
-                padding-right: 2%;
-                padding-left: 4%;
-            }
-            
-
-
-
+        #title {
+            padding: 2%
         }
-        /* Iphone resolution for models less than 4*/
-        @media only screen and (max-width: 350px) and (orientation: portrait) {
-            #legend{
-                width: 84%;
-                left: 0%;
-            }
-
+        #legend {
+            left: 0%;
+            width: 87%;
         }
-
-        
+        #welcome {
+            padding-right: 2%;
+            padding-left: 4%;
+        }
     }
-@media only screen and (min-width: 487px) and (max-width: 658) and (orientation: landscape) {
+    /* iPhone resolution for models less than 8 */
+    @media only screen and (max-width: 667px) and (orientation: portrait) {
+        #header {
+            height: 65%;
+        }
+        #legend {
+            left: 0%;
+            right: 100% !important;
+            width: 100%;
+        }
+        #welcome {
+            padding-right: 2%;
+            padding-left: 4%;
+        }
+    }
+    /* iPhone resolution for models less than 4*/
+    @media only screen and (max-width: 350px) and (orientation: portrait) {
+        #legend {
+            width: 84%;
+            left: 0%;
+        }
+    }
+}
 
-    #header{
+@media only screen and (min-width: 487px) and (max-width: 658) and (orientation: landscape) {
+    #header {
         height: 65%;
     }
-
 }
 
 @media only screen and (max-width: 480px) {
-    #header{
+    #header {
         height: 80%;
     }
 }
+
 @media only screen and (min-width: 328px) and (max-width: 486px) and (orientation: landscape) {
-    #header{
+    #header {
         height: 100%;
     }
-
 }
+
 @media screen and (max-width: 327px) {
-
-        .return {
-
-            width: 45%;
-            left: 25%;
-
-        }
-
-        #legend {
-
-            width: 84%;
-            position: relative;
-            left: 0%;
-            
-
-        }
+    .return {
+        width: 45%;
+        left: 25%;
     }
-    
-           
-
-
-
+    #legend {
+        width: 84%;
+        position: relative;
+        left: 0%;
+    }
+}
